@@ -1,5 +1,12 @@
-ECHO 处于打开状态。
-# 编译输出文件
+# 忽略所有 Visual Studio 项目文件
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# 忽略编译输出
+x64/
+Debug/
+Release/
 *.obj
 *.exe
 *.ilk
@@ -7,16 +14,6 @@ ECHO 处于打开状态。
 *.idb
 *.recipe
 *.log
-
-# 调试文件夹
-x64/
-Debug/
-Release/
-
-# Visual Studio 临时文件
-*.vcxproj.user
 *.tlog/
 .vs/
-
-# 其他垃圾
 *.enc
